@@ -1,6 +1,8 @@
 # Documentation: Creating Apple Wallet Pass and Google Wallet Pass
 This documentation provides step-by-step instructions for backend developers on how to create Apple Wallet passes and Google Wallet passes. The process involves creating and configuring pass files, generating required certificates, and implementing backend logic to serve the passes.
 
+
+*Pass Lifecycle*
 ![Pass Lifecycle](Pass-Lifecycle-3.png)
 
 ### Apple Wallet Pass
@@ -21,6 +23,8 @@ This documentation provides step-by-step instructions for backend developers on 
       * Select "Pass Type ID Certificate" and follow the instructions to generate a Certificate Signing Request (CSR) from Keychain Access.
       * Upload the CSR and download the generated certificate.
       * Install the certificate on your machine and export it as a .p12 file along with the private key.
+      * [Full guide to get all the files you need to proceed.](https://github.com/alexandercerutti/passkit-generator/wiki/Generating-Certificates)
+
 2. **Create the Pass Structure**
     * **pass.json:**
       * Create a JSON file named pass.json with the structure of your pass, including fields like description, formatVersion, organizationName, passTypeIdentifier, serialNumber, teamIdentifier, barcode, etc.
