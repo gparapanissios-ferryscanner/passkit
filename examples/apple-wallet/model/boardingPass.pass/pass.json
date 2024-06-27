@@ -1,0 +1,84 @@
+{
+  "formatVersion" : 1,
+  "passTypeIdentifier" : "pass.<bundle id>",
+  "serialNumber" : "gT6zrHkaW",
+  "teamIdentifier" : "<your team identifier>",
+  "relevantDate" : "2012-07-22T14:25-08:00",
+  "type" : "boardingPass",
+  "barcode" : {
+    "message" : "SFOJFK JOHN APPLESEED LH451 2012-07-22T14:25-08:00",
+    "format" : "PKBarcodeFormatQR",
+    "messageEncoding" : "iso-8859-1"
+  },
+  "organizationName" : "Ferryscanner",
+  "description" : "Ferryscanner Boarding Pass",
+  "logoText" : "ferryscanner",
+  "foregroundColor" : "rgb(255, 255, 255)",
+  "backgroundColor" : "rgb(0, 107, 219)",
+  "labelColor" : "rgb(191, 219, 254)",
+  "boardingPass" : {
+    "transitType" : "PKTransitTypeBoat",
+    "headerFields" : [
+      {
+        "key" : "gate",
+        "label" : "Booking Code",
+        "value" : "B123456789"
+      }
+    ],
+    "primaryFields" : [
+      {
+        "key" : "origin",
+        "label" : "Priraeus",
+        "value" : "PIR"
+      },
+      {
+        "key" : "destination",
+        "label" : "Syros",
+        "value" : "JSY"
+      }
+    ],
+    "secondaryFields" : [
+      {
+        "key" : "passenger",
+        "label" : "PASSENGER",
+        "value" : "John Appleseed"
+      }
+    ],
+    "auxiliaryFields" : [
+      {
+        "label" : "DEPART",
+        "key" : "boardingTime",
+        "value" :  "2:25 PM",
+        "changeMessage" : "Boarding time changed to %@."
+      },
+      {
+        "label" : "FLIGHT",
+        "key" : "flightNewName",
+        "value" : "815",
+        "changeMessage" : "Flight number changed to %@"
+      },
+      {
+        "key" : "class",
+        "label" : "DESIG.",
+        "value" : "Coach"
+      },
+      {
+        "key" : "date",
+        "label" : "DATE",
+        "value" :  "7/22"
+      }
+    ],
+    "backFields" : [
+      {
+        "key" : "passport",
+        "label" : "PASSPORT",
+        "value" : "Canadian/Canadien"
+      },
+      {
+        "key" : "residence",
+        "label" : "RESIDENCE",
+        "value" : "999 Infinite Loop, Apartment 42, Cupertino CA"
+      }
+    ]
+  }
+}
