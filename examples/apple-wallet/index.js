@@ -12,7 +12,7 @@ const generatePass = async () => {
     const wwdr = fs.readFileSync(path.join(certsPath, 'WWDR.pem'));
     const signerCert = fs.readFileSync(path.join(certsPath, 'signerCert.pem'));
     const signerKey = fs.readFileSync(path.join(certsPath, 'signerKey.pem'));
-    const signerKeyPassphrase = process.env.PASS_PHRASE;
+    const signerKeyPassphrase = process.env.SIGNER_PASSPHRASE;
 
     // Initialize the pass from a model folder
     const pass = await PKPass.from({
